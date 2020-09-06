@@ -1,0 +1,29 @@
+.form--row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+//   gap: 16px;
+  & span {
+    border: 1px solid;
+    padding: 5px;
+  }
+  & .left-column-cell {
+    font-weight: bold;
+  }
+}
+
+.form--row--header {
+  & span {
+    font-weight: bold;
+  }
+}
+
+.modal-footer {
+  margin-top: 25px;
+}
+
+.area-b {
+  margin-top: 20px;
+  & .form--row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

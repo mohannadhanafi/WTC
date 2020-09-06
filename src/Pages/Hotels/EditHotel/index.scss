@@ -1,0 +1,9 @@
+@import "../../../styles/editForms.scss";
+
+.edit-header {
+  @include edit-actions;
+}
+
+.edit-header__button {
+  @include edit-button;
+}

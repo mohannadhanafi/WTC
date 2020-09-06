@@ -1,0 +1,18 @@
+@mixin table-container {
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__button {
+    margin: 0 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

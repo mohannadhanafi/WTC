@@ -1,0 +1,27 @@
+.button-popup {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+
+  .table-icon__delete {
+    color: #ff4d4f;
+    transition: color 0.5s;
+    font-size: 20px;
+  }
+}
+
+.button-popup:hover {
+  .table-icon__delete {
+    color: rgba(255, 77, 79, 0.4) !important;
+  }
+}
+
+.table-icon__edit {
+  font-size: 20px;
+}
+
+.ride_icon {
+  color: #1890ff;
+  cursor: pointer;
+}

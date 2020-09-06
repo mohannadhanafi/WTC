@@ -1,0 +1,35 @@
+@import "../../../assets/variables";
+
+.outer-header {
+  height: 64px;
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+
+  &__logo {
+    img {
+      width: 55px;
+    }
+  }
+
+  &__nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  &__nav-link {
+    font-size: 20px;
+    margin-left: 32px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

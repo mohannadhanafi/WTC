@@ -1,0 +1,34 @@
+@import "../../styles/authForms.scss";
+
+.register {
+  @include auth-page;
+
+  padding-top: 64px;
+
+  .auth-form-container {
+    @include auth-form;
+  }
+
+  &__account-type {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    margin-bottom: 24px;
+
+    &-label {
+      margin-bottom: 0;
+      margin-right: 16px;
+      font-size: 16px;
+      color: #0a0a0a;
+    }
+
+    &-select {
+      min-width: 108px;
+    }
+  }
+
+  &__login-link {
+    padding-left: 10px;
+    margin-top: 16px;
+  }
+}

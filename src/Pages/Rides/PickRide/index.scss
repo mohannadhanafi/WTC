@@ -1,0 +1,136 @@
+@import "../../../styles/inputs.scss";
+
+.booking {
+  height: 100%;
+  padding-top: 64px;
+  display: flex;
+  align-items: stretch;
+
+  &__hero {
+    background-image: url(https://i.ibb.co/tHtZdP8/chauffeur.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(73, 73, 73, 0.2);
+      z-index: 0;
+    }
+  }
+
+  & .booking__hero__hotel {
+    width: 100%;
+  }
+
+  &__form-wrapper {
+    max-width: 794px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 16px rgba(226, 226, 226, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  &__form-header {
+    height: 64px;
+    background-color: #c2585a;
+    line-height: 64px;
+
+    h2 {
+      margin: 0;
+      padding-left: 32px;
+      font-size: 28px;
+      color: #fff;
+    }
+  }
+
+  &__form-body {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .ant-radio-wrapper {
+      font-size: 20px;
+      color: #0a0a0a;
+      margin-right: 32px;
+
+      .ant-radio {
+        .ant-radio-inner {
+          width: 20px;
+          height: 20px;
+
+          &::after {
+            width: 12px;
+            height: 12px;
+          }
+        }
+
+        &.ant-radio-checked {
+          .ant-radio-inner {
+            border-color: #0a0a0a;
+
+            &::after {
+              background-color: #c2585a;
+            }
+          }
+        }
+
+        .ant-radio-input:focus + .ant-radio-inner {
+          box-shadow: 0 0 0 3px rgba(194, 88, 90, 0.08);
+        }
+      }
+    }
+
+    .ant-form {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 250px);
+      gap: 24px;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 54px;
+
+      .ant-form-item {
+        margin-bottom: 0;
+
+        &.submit-btn {
+          grid-column: 1 / -1;
+          text-align: center;
+
+          .ant-btn-primary {
+            height: 48px;
+            font-size: 20px;
+            background-color: #c2585a;
+            border-color: #c2585a;
+            margin-top: 16px;
+            width: 100%;
+            max-width: 195px;
+          }
+        }
+      }
+
+      .ant-input {
+        @include white-input;
+      }
+
+      .ant-picker {
+        @include white-datepicker-input;
+      }
+    }
+  }
+}

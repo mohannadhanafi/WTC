@@ -1,0 +1,25 @@
+.ant-layout {
+  .ant-layout-header.dashboard-header .dashboard-header__menu-item {
+    .anticon {
+      color: #f5f5f5;
+    }
+  }
+  .ant-layout-sider {
+    .ant-layout-sider-children {
+      .logo-wrapper {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .logo-image {
+          width: 100px;
+        }
+      }
+    }
+
+    .ant-layout-sider-zero-width-trigger-left {
+      top: unset;
+      bottom: 24px;
+    }
+  }
+}

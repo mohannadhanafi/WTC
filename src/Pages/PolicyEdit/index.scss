@@ -1,0 +1,17 @@
+.edit-policy {
+  padding-left: 16px;
+  .fr-box.fr-basic {
+    border-radius: 4px;
+  }
+  .fr-toolbar.fr-top {
+    border-radius: 4px 4px 0 0;
+  }
+  .second-toolbar {
+    border-radius: 0 0 4px 4px;
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+  }
+}

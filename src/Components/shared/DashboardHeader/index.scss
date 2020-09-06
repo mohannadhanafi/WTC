@@ -1,0 +1,28 @@
+.ant-layout-header {
+  &.dashboard-header {
+    .dashboard-header__menu {
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-end;
+      list-style-type: none;
+
+      &-item {
+        padding: 0 16px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        .user-dropdown,
+        .notifications-popover {
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

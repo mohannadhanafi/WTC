@@ -1,0 +1,69 @@
+@import "../../../../../../styles/inputs.scss";
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 32px 0;
+  max-width: 654px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 40px;
+    color: #0a0a0a;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 590px;
+  }
+
+  &__form {
+    width: 590px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .ant-form-item {
+      flex-basis: 47.2%;
+
+      &.full-width {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      .ant-input, .ant-select {
+        @include white-input;
+        color: #0a0a0a;
+      }
+
+      .ant-btn-primary {
+        height: 48px;
+        font-size: 20px;
+        background-color: #c2585a;
+        border-color: #c2585a;
+        margin-top: 16px;
+        width: 100%;
+        max-width: 195px;
+        font-weight: 500;
+        margin-left: 32px;
+      }
+
+      .ant-btn-ghost {
+        height: 48px;
+        font-size: 20px;
+        background-color: transparent;
+        border-color: #c2585a;
+        color: #c2585a;
+        margin-top: 16px;
+        width: 100%;
+        max-width: 195px;
+        font-weight: 500;
+
+        &:hover {
+          color: #c2585a;
+        }
+      }
+    }
+  }
+}

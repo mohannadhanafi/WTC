@@ -1,0 +1,68 @@
+.service-class {
+  &__card {
+    padding: 24px;
+    box-shadow: 0 8px 8px #e2e2e2;
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+
+    &-header {
+      display: flex;
+      align-items: baseline;
+
+      &-class {
+        margin-right: 16px;
+        font-size: 40px;
+      }
+
+      &-class-type {
+        font-size: 20px;
+      }
+    }
+
+    &-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-feature {
+        margin-bottom: 8px;
+        max-width: 200px;
+        font-size: 16px;
+      }
+
+      &-price-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      &-price {
+        font-size: 36px;
+        margin-bottom: 0;
+      }
+
+      &-note {
+        margin-bottom: 8px;
+      }
+
+      &-cta {
+        width: 100%;
+        max-width: 195px;
+        height: 48px;
+        color: #fff;
+        background-color: #c2585a;
+        border-color: #c2585a;
+        font-size: 20px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: #a34e50;
+          background-color: #a34e50;
+        }
+      }
+    }
+  }
+}

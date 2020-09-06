@@ -1,0 +1,30 @@
+@import "../../../styles//inputs.scss";
+
+.google-places-autocomplete {
+  &__input {
+    @include white-input;
+    padding: 4px 11px;
+    width: 100%;
+    margin: unset;
+    box-shadow: unset;
+  }
+  &__suggestions-container {
+    background: #f5f5f5;
+    box-shadow: 0 2px 8px #e2e2e2;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  &__suggestion {
+    padding: 4px 8px;
+    border-bottom: 1px solid #6f6f6f;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    will-change: background-color;
+    &:last-child {
+      border-bottom: 0;
+    }
+    &:hover {
+      background-color: #e2e2e2;
+    }
+  }
+}

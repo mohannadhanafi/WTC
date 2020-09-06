@@ -1,0 +1,10 @@
+@mixin edit-actions {
+  padding: 0 50px 33px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin edit-button {
+  width: 100px;
+}

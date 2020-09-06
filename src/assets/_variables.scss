@@ -1,0 +1,32 @@
+// Responsive breakpoints
+// Mobile devices
+$sm-screens: "max-width: 576px";
+// Small tablets, iPad
+$md-screens: "max-width: 810px";
+// Tablets, iPad Pro, Samsung S5
+$lg-screens: "max-width: 1024px";
+// Large screens, Desktops
+$xlg-screens: "max-width: 1200px";
+
+// Containers
+@mixin sm-container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@mixin md-container {
+  width: 100%;
+  max-width: 736px;
+  margin: 0 auto;
+}
+@mixin lg-container {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+}
+@mixin xlg-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}

@@ -1,0 +1,28 @@
+.notifications-popover-overlay {
+  width: 300px;
+
+  .ant-popover-inner-content {
+    display: flex;
+    justify-content: center;
+
+    .infinite-scroll-wrapper {
+      height: 250px;
+      overflow: auto;
+      flex: 1;
+    }
+
+    .notifications-items {
+      flex: 1;
+
+      .ant-spin-spinning {
+        display: block;
+        margin-top: 12px;
+        position: relative;
+      }
+    }
+
+    .notifications-item {
+      padding: 4px 0;
+    }
+  }
+}

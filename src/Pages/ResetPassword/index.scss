@@ -1,0 +1,9 @@
+@import "../../styles/authForms.scss";
+
+.forgot-password {
+  @include auth-page;
+
+  .auth-form-container {
+    @include auth-form;
+  }
+}
